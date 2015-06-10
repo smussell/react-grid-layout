@@ -21,7 +21,7 @@ module.exports = {
     },
     module: {
       loaders: [
-        {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader?stage=0'}
+        {test: /(\.jsx|\.es)?$/, exclude: /node_modules/, loader: 'babel-loader?stage=0'}
       ]
     },
     plugins: [
@@ -38,6 +38,6 @@ module.exports = {
       new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}})
     ],
     resolve: {
-      extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx"]
+      extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx", ".es"]
     }
 };
