@@ -34,7 +34,7 @@
   "dependencies": {
     "deep-equal": "^1.0.0",
     "object-assign": "^2.0.0",
-    "react-draggable": "git+https://github.com/mzabriskie/react-draggable.git",
+    "react-draggable": "git+https://github.com/smussell/react-draggable.git",
     "react-resizable": "^0.3.3"
   },
   "devDependencies": {

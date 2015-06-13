@@ -63,10 +63,17 @@ var BasicLayout = React.createClass({
   },
 
   render() {
+    var style = {
+      position: "absolute",
+      top: 20,
+      border: "1px solid red",
+      bottom: 0,
+      left: 0,
+      right: 0,
+      overflow: "auto"
+    }
     return (
-      <div>
-        <div>Current Breakpoint: {this.state.currentBreakpoint} ({this.props.cols[this.state.currentBreakpoint]} columns)</div>
-        <button onClick={this.onNewLayout}>Generate New Layout</button>
+      <div style={style}>
         <ResponsiveReactGridLayout
             layouts={this.state.layouts}
             onBreakpointChange={this.onBreakpointChange}

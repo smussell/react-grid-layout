@@ -33,12 +33,7 @@ module.exports = function(Layout) {
     render(){
       return (
         <div>
-          <div className="layoutJSON">
-            Displayed as <code>[x, y, w, h]</code>:
-            <div className="columns">
-              {this.stringifyLayout()}
-            </div>
-          </div>
+          
           <Layout onLayoutChange={this.onLayoutChange} />
         </div>
       );

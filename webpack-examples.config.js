@@ -15,7 +15,7 @@ module.exports = {
     },
     module: {
       loaders: [
-        {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader?stage=0&optional=runtime'}
+        {test: /(\.jsx|\.es)$/, exclude: /node_modules/, loader: 'babel-loader?stage=0&optional=runtime'}
       ]
     },
     plugins: [
@@ -30,7 +30,7 @@ module.exports = {
       new webpack.optimize.DedupePlugin()
     ],
     resolve: {
-      extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx"],
+      extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx", ".es"],
       alias: {'react-grid-layout': __dirname + '/index-dev.js'}
     }
 };
